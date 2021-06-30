@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(state)</title>
+    <style>
+
+        a {
+            font-size: 24px
+        }
+        a:link {
+            color:green
+        }
+       a:hover { /* ustune geldiginde rengi degisiyor */
+           color: red;
+       }
+       a:visited { /*tiklandiktan sonra */
+           color: hotpink;
+       }
+       a:active { /* tam tiklarkanki renk */
+           color: blue;
+       }
+       input {
+           font-size: 1.5ex;
+           padding: 10px;
+           border-radius: 5px;
+           border: 4px solid black
+       }
+       input:focus {
+           outline: 0;
+           border: 2px solid black
+
+       }
+       .Raika {
+        color: blue;
+        font-size: 1.5em;
+        display: inline-block;
+        background-color:burlywood;
+        text-decoration: none;
+       }
+       .Raika :hover {
+           background: white;
+           color: blue;
+           border: 1px solid blue;
+       }
+    </style>
+</head>
+<body>
+    <a href="#">This is a link</a> <br>
+    <a href="#"> anotherlink</a> <br>
+    <input type="text" placeholder="Name"/> <br> <br> <br>
+
+    <a href="#" id="lastlink" class="Raika">Facebook</a>
+</body>
+</html>

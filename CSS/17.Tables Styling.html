@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Styling</title>
+    <style>
+        table,tr,td,th {
+            border: 4px solid cornflowerblue;
+            border-collapse: collapse;
+            
+        }
+        table {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 2em;
+        }
+        th,td {
+            padding: 10px;
+        }
+        thead tr {
+            background: darkkhaki;
+            color:black
+        }
+        tbody tr {
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background: burlywood;
+        }
+        tbody tr:hover {
+            background: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="employees">
+        <thead>
+            <tr>
+            <th>Isim-Soyisim</th>
+            <th>Departman</th>
+            <th>Maas</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Raika</td>
+                <td>bilisim</td>
+                <td>6000$</td>
+            </tr>
+            <tr>
+                <td>Raika</td>
+                <td>bilisim</td>
+                <td>6000$</td>
+            </tr>
+            <tr>
+                <td>Raika</td>
+                <td>bilisim</td>
+                <td>6000$</td>
+            </tr>
+            <tr>
+                <td>Raika</td>
+                <td>bilisim</td>
+                <td>6000$</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
