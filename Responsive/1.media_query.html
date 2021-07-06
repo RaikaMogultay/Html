@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design & Media Queries</title>
+    
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box ;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .box {
+            border: 1px solid black;
+            background: blanchedalmond;
+            padding: 10px;
+            width: 25%;
+        }
+        @media(max-width:768px) {
+            .box {
+                width: 50%;
+            }
+
+        }
+        @media(max-width:500px) {
+           .box{
+            width: 100%;   
+           } 
+            
+        }
+       /* p {
+            display: none;
+
+        }
+        @media(min-width:768px) {
+            p {
+                display: block;
+            }
+        }
+          
+    
+
+         /* body {
+            background: red;
+        }
+        /* tablet 
+        @media(max-width:768px) {
+            body {
+                background: rosybrown;
+            }
+
+        } 
+        /* Phone 
+        @media(max-width:500px) {
+            body {
+                background: seagreen;
+            }
+        }  */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque dolorum maxime velit! Aperiam, porro! Architecto, accusantium. Velit incidunt, reiciendis quo nostrum dolorem pariatur voluptate et nemo, eligendi impedit nihil.
+
+        </p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque dolorum maxime velit! Aperiam, porro! Architecto, accusantium. Velit incidunt, reiciendis quo nostrum dolorem pariatur voluptate et nemo, eligendi impedit nihil.
+            
+        </p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque dolorum maxime velit! Aperiam, porro! Architecto, accusantium. Velit incidunt, reiciendis quo nostrum dolorem pariatur voluptate et nemo, eligendi impedit nihil.
+            
+        </p>
+    </div>
+    <div class="box">
+        <h1>Article 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est itaque dolorum maxime velit! Aperiam, porro! Architecto, accusantium. Velit incidunt, reiciendis quo nostrum dolorem pariatur voluptate et nemo, eligendi impedit nihil.
+            
+        </p>
+    </div>
+</div>
+
+   <!--<p>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem quasi in veniam fuga tenetur, recusandae consequatur repudiandae, totam quo deleniti magni temporibus architecto? Earum dignissimos reprehenderit labore ab iusto!
+   </p> -->
+</body>
+</html>
