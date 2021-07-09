@@ -1,0 +1,51 @@
+/* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+/* Colors */
+
+.bg-ligth-blue {
+    background-color: cadetblue;
+}
+.bg-dark-blue {
+    background-color: darkcyan;
+}
+
+/* Buttons */
+
+.btn {
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+.btn-primary {
+    background: cadetblue;
+}
+.btn-primary-hover {
+    color: cadetblue;
+    background: white;
+    border: 0.5px solid cadetblue;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}

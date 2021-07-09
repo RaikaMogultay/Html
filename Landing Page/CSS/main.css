@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+html {
+    font-family: "Open Sans", sans-serif;
+}
+/* Navbar */
+#navbar {
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+
+}
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a {
+    padding: 0.75rem
+}
+#navbar ul li a:hover {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+#home img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100%;
+}
+#home .name {
+    text-align: center;
+}
+#home .name h2 {
+    margin-bottom: 0.75rem;
+
+}
+#home .name p {
+    opacity: 0.6;
+    font-style: italic;
+}
+#home a{
+    margin-top: 0.25rem;
+    background:lightgoldenrodyellow;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+#home a:hover {
+    color: lightskyblue;
+    background: white;
+    border: 0.5px solid lightskyblue;
+}
+/* Training */
+
+#training {
+    color:cornsilk;
+    padding: 1rem;
+}
+#training .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#training .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+#training .items .item:hover {
+    color: darkgrey;
+}
+/* Courses */
+#courses {
+    color: #333;
+    padding: 1rem;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;   
+}
+.courses .course {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.courses .course .course-image {
+    margin-right: 0.5rem;
+    position: relative;
+}
+.courses .course .course-image img {
+    border-radius: 5px;
+}
