@@ -30,10 +30,10 @@
             <nav id="navbar">
                 <h1 class="heading-small">Raika Engin Mogultay</h1>
                 <ul>
-                    <li><a href="Home">Anasayfa</a></li>
-                    <li><a href="Training">Egitimler</a></li>
-                    <li><a href="Courses">Kurslar</a></li>
-                    <li><a href="Contact">Iletisim</a></li>
+                    <li><a href="#home">Anasayfa</a></li>
+                    <li><a href="#training">Egitimler</a></li>
+                    <li><a href="#courses">Kurslar</a></li>
+                    <li><a href="#contact">Iletisim</a></li>
                 </ul>
             </nav>
         </div>
@@ -158,6 +158,51 @@
             </div>
         </div>
     </section>
+    
+    <footer id="contact"class= "bg-dark-blue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">
+                    Bana Ulasin </h4>
+                    <div class="form-group">
+                        <label for="name">Isim </label>
+                        <input 
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id="name"
+                        placeholder="isim"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="e-mail">E-mail </label>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        name="e-mail"
+                        id="e-mail"
+                        placeholder="e-mail"
+                        />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            id="message"
+                            rows="5"
+                            placeholder="Mesajiniz.."
+                        ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Gonder</button>
+            </form>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 
