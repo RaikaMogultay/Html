@@ -1,0 +1,10 @@
+.dark-bg {
+    background-image:url(IMG_6210.jpeg) ;
+    opacity: 70%;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+#hero .container {
+    height: 70vh;
+} 
