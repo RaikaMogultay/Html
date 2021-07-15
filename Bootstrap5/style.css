@@ -8,6 +8,9 @@
 #hero .container {
     height: 70vh;
 }
-section {
+.generic {
     padding: 100px 0;
 } 
+.img-fluid {
+    contain: style;
+}
