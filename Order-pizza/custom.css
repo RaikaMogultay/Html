@@ -1,0 +1,8 @@
+.jumbotron {
+    background-image: url('pizza.png');
+    margin-top: 25px;
+}
+.raika {
+    background-color: grey;
+    opacity: 50%;
+}

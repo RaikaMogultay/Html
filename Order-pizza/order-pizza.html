@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order-Pizza</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Order Online<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- REST OF CONTENT -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4 position-relative text-center" style="background-color: lightgrey; opacity: 50%;">Welcome
+            to Pizza world!</h1>
+    </div>
+
+    <div class="container-fluid">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                    aria-selected="true"><span class="badge">1</span>Size and crust</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false"><span class="badge">2</span>Cheese and Sauce</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false"><span class="badge">3</span>Toppings</a>
+            </li>
+        </ul>
+
+
+        <!-- 1. TAB -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card text-left">
+                    <div class="card-header">
+                        Hand Tossed
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Garlic Seasoned crust with a rich, buttery taste.</h5>
+                        <ul class="list-group">
+                            <div class="form-check">
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Small(10")</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Medium(10")
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="card-header">
+                        Crispy Thin
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Thin enough for optimum Crispy to crunchy ratio.</h5>
+                        <ul class="list-group">
+                            <div class="form-check">
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Small(10")</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Medium(10")
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted text-right">
+                        <a class="btn button" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Next Step</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. TAB -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card text-left">
+                    <div class="card-header">
+                        Cheese
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">How much?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Light</option>
+                            <option>Normal</option>
+                            <option>Extra</option>
+                            <option>Double</option>
+                        </select>
+                    </div>
+                    <div class="card-header">
+                        Sauce
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">What Type?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Tomato sauce</option>
+                            <option>Marinara sauce</option>
+                            <option>BBQ sauce</option>
+                            <option>Extra </option>
+                        </select>
+                        <label for="exampleFormControlSelect1">How much?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Light</option>
+                            <option>Normal</option>
+                            <option>Extra</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-secondary">Previous Step</button>
+                </div>
+            </div>
+
+             <!-- 3. TAB -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="card text-left">
+                    <div class="card-header">
+                        Choose toppings
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Choose Meats</h5>
+                        <ul class="list-group">
+                            <div class="form-check">
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Beef</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Ham</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Philly Steak
+                                </li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Bacon</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Choose Non-Meats</h5>
+                        <ul class="list-group">
+                            <div class="form-check">
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Green Peppers
+                                </li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Mushrooms</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Onions</li>
+                                <li class="list-group-item"><input class="form-check-input position-static" type="radio"
+                                        name="blankRadio" id="blankRadio1" value="option1" aria-label="">Jalepona </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted text-right">
+                        <div class="badge badge-primary text-wrap" style="width: 8rem;">
+                            Checkout
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
